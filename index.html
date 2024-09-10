@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<title>Formulário</title>
+</head>
+<body>
+	<div class="topo">
+		<h2>Componentes de Formulário</h2>
+	</div>
+	<div class="conteudo">
+		<form method="GET">
+			<div>
+				<label for="nome">Nome: </label>
+				<input type="text" placeholder="Informe seu nome" name="nome">
+			</div>
+			
+			<div>
+				<label for="email">E-mail</label>
+				<input type="email" placeholder="Informe seu e-mail" name="email">
+			</div>
+
+			<div>
+				<label for="senha">Senha: </label>
+				<input type="password" placeholder="Informe sua senha" name="senha">
+			</div>
+
+			<div>
+				<label for="telefone">Telefone: </label>
+				<input type="tel" placeholder="(00) 00000-0000" name="tel" pattern="([0-9]{2})[0-9]{5}-[0-9]{4}">
+			</div>
+
+			<div>
+				<label for="genero">Gênero: </label>
+				<select name="genero" id="genero">
+					<option value="1">Masculino</option>
+					<option value="2">Feminino</option>
+				</select>
+			</div>
+
+			<div class="opcoes">
+				<p>Como você conheceu nosso site?</p>
+				<label for="revista">
+					<input type="checkbox" value="revista" name="revista"> Revista
+				</label>
+				<label for="jornal">
+					<input type="checkbox" value="jornal" name="jornal"> Jornal
+				</label>
+				<label for="televisao">
+					<input type="checkbox" value="televisao" name="televisao"> Televisão
+				</label>
+			</div>
+
+			<div class="opcoes">
+				<p>Selecione seu idioma nativo:</p>
+				<label for="idioma">
+					<input type="radio" name="idioma"> Português
+				</label>
+				<label for="idioma">
+					<input type="radio" name="idioma"> Inglês
+				</label>
+				<label for="idioma">
+					<input type="radio" name="idioma"> Espanhol
+				</label>
+			</div>
+
+			<div>
+				<label for="foto">Foto de Perfil</label>
+				<input type="file" name="perfil">
+			</div>
+
+			<div>
+				<button type="submit">Enviar</button>
+				<button type="clear">Limpar</button>
+				<input type="button" name="clique" value="Aperte Aqui!" onclick="alert('Olá Pessoal!')">
+			</div>
+		</form>
+	</div>
+</body>
+</html>
